@@ -1,0 +1,372 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    position: absolute;
+    display: block;
+    background: url("william-bayreuther-586504-unsplash.jpg") no-repeat center;
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.container-other {
+    margin-bottom: 30vh;
+}
+
+.overlay {
+    width:100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0.7;
+    background-image: linear-gradient(#002f4b,#000);
+}
+
+/* header */
+.header-nav,
+.header-nav-other {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-around;
+    padding-top: 2vh;
+}
+
+.header-nav a,
+.header-nav-other a {
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+    border-bottom: solid 3px transparent;
+}
+
+.header-nav a:hover {
+    border-bottom: solid 3px #fff;
+}
+
+.header-nav-other a {
+    color: #002f4b;
+}
+
+.header-nav-other a:hover {
+    border-bottom: solid 3px #002f4b;
+}
+
+/* logo */
+.svp-logo {
+    position: relative;
+    color: white;
+    width: 500px;
+    border: solid 5px white;
+    text-align: center;
+    margin: auto;
+    margin-top: 30vh;
+}
+
+.svp-logo-other {
+    position: relative;
+    color: white;
+    width: 300px;
+    border: solid 5px #002f4b;
+    text-align: center;
+    margin: auto;
+    margin-top: -100px;
+}
+
+.logo-name {
+    width: 80%;
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px white;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 30px;
+}
+
+.logo-name-other {
+    width: 80%;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #002f4b;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 20px;
+    color: #002f4b;
+}
+
+.logo-text {
+    padding-top: 5px;
+    padding-bottom: 20px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 20px;
+}
+
+.logo-text-other {
+    padding-top: 5px;
+    padding-bottom: 10px;
+    margin: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 5px;
+    font-size: 10px;
+    color: #002f4b;
+}
+
+/* page content */
+.title {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    border-bottom: solid 3px #002f4b;
+}
+
+.title h1 {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+/* gallery */
+.gallery-subheading {
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    font-size: 16px;
+    width: 80%;
+    margin: 50px auto;
+    color: grey;
+}
+
+.family-section,
+.weddings-section,
+.festive-section {
+    height: 50vh;
+}
+
+.gallery-more {
+    float: right;
+    font-size: 12px;
+    color: #002f4b;
+    text-decoration: none;
+    border-bottom: solid 2px transparent;
+}
+
+.gallery-more:hover {
+    cursor: pointer;
+    padding-bottom: 5px;
+    border-bottom: solid 2px #002f4b;
+}
+
+.back-arrow {
+    vertical-align: middle;
+    text-decoration: none;
+    color: #002f4b;
+    margin-right: 10px;
+}
+
+/* about */
+.about-intro-message {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.about-intro-message p {
+    color: grey;
+    font-size: 14px;
+}
+
+.about-img-container {
+    width: 30%;
+    margin: auto;
+    background: url("svp_img.jpg") no-repeat center;
+    background-size: contain;
+    height: 300px;
+}
+
+.img-caption {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+}
+
+.img-caption p {
+    color: grey;
+    font-size: 12px;
+}
+
+.img-caption p::before {
+    color: #002f4b;
+    content: '\f041';
+    font-family: FontAwesome;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.about-p {
+    width: 40%;
+    margin: 40px auto;
+}
+
+.about-p p {
+    color: grey;
+    font-size: 14px;
+}
+
+@media only screen and (max-width: 860px) {
+    .about-intro-message {
+        width: 60%;
+    }
+
+    .about-p {
+        width: 50%;
+    }
+}
+
+/* contact */
+.contact-intro-text {
+    width: 50%;
+    margin: 40px auto;
+    text-align: center;
+}
+
+.contact-intro-text p {
+    color: grey;
+    font-size: 14px;
+}
+
+.form-container {
+    width: 35%;
+    margin: 40px auto;
+}
+
+label {
+    font-size: 14px;
+    color: #002f4b;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid grey;
+    border-radius: 0;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #002f4b;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: grey;
+}
+
+.social-icons-contact {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-social-icons-col {
+    align-items: center;
+}
+
+.social-icons-contact .fa-twitter,
+.social-icons-contact .fa-facebook,
+.social-icons-contact .fa-instagram {
+    color: #002f4b;
+    padding: 10px 0;
+    margin: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.social-text {
+    display: block;
+    color: grey;
+    width: 100%;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+/* social media links */
+.social-icons {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 200px;
+}
+
+.fa {
+    font-size 0px;
+}
+
+.fa-facebook,
+.fa-twitter,
+.fa-instagram {
+    color: white;
+    padding: 0 20px;
+    text-decoration: none;
+}
+
+.fa-facebook:before,
+.fa-twitter:before,
+.fa-instagram:before {
+    font-size: 30px;
+}
+
+/* footer */
+footer {
+    position: absolute;
+    width: 100%;
+    background-color: #002f4b;
+}
+
+.social-icons-text {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 12px;
+    text-align: center;
+    padding-top: 90px
+}
+
+.social-icons-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 100px;
+}
